@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Iniciar Sesion</title>
+</head>
+<body background="{% static 'img/fondo.jpg' %}">
+    {% block content %}
+                <a href="{% url 'sign_up' %}"> Crear Cuenta</a>  
+                    <h2>Iniciar Sesión</h2>
+                    <form action="#" method="POST">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <input type="submit" name="submit">       
+                    </form>
+                <div class="reset-password">
+                    <a href="#">Olvide mi Contraseña?</a>
+                </div>
+    {% endblock content %}
+    
+</body>
+</html>
