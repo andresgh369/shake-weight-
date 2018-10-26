@@ -7,11 +7,10 @@
 }
 
 body {
-    background: url(../img/bg2.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: Roboto;
+    background: url(../img/atras.jpg);
+
 }
+
 
 .contenedor-form {
     background: rgba(0,0,0,.7);
@@ -36,7 +35,6 @@ body {
     border-top: 2px solid #ff851b;
     border-bottom: 2px solid #ff851b;
     cursor: pointer;
-    transition: all .5s ease;
 }
 
 .contenedor-form .toggle:hover {
@@ -63,15 +61,13 @@ body {
     padding: 10px 15px;
     margin: 0 0 20px 0;
     background: rgba(0,0,0,.5);
-    color: #fff;
+
     border: none;
     border-radius: 2px;
     border-bottom: 4px solid #ff851b;
     box-sizing: border-box;
-    font-family: Roboto;
     font-size: 14px;
     font-weight:normal;
-    transition: all .5s ease;
 }
 
 .contenedor-form input[type="text"]:focus,
@@ -88,10 +84,8 @@ body {
     padding: 10px 0;
     font-size: 16px;
     font-weight: normal;
-    font-family: Roboto;
     letter-spacing: 1px;
     cursor: pointer;
-    transition: all .5s ease;
 }
 
 .contenedor-form input[type="submit"]:hover {
@@ -120,4 +114,14 @@ body {
 
 .contenedor-form .formulario:nth-child(2) {
     display: block;
+}
+
+
+.contenedor-form p{
+        background: rgba(0, 117, 217, .7);
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
